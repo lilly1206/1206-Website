@@ -112,3 +112,102 @@ h3{
     }
   }
 }
+
+.services{
+  h3{
+    color: $blue;
+  }
+  ul{
+    li{
+      text-align: center;
+      list-style: none;
+      height: 225px;
+      h4{
+        font-family: "GothamLight";
+        font-size: emCalc(16px);
+        color: $blue;
+        text-transform: uppercase;
+        letter-spacing: -1.5px;
+        margin-top: emCalc(14px);
+        margin-bottom: 3px;
+      }
+      p{
+        color: $gray;
+        font-family: "GothamLight";
+        font-size: emCalc(12px);
+        line-height: emCalc(18px);
+        letter-spacing: -0.5px;
+      }
+      span{
+        height: 94px;
+        width: 94px;
+        @include border-radius(50px);
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 11px;
+        img{
+          height: 75%;
+        }
+      }
+      &.gray span{
+        background: $gray;
+        padding-top: 20px;
+      }
+      &.orange span{
+        background: $orange;
+        padding-top: 0;
+        img{
+          height: 100%;
+        }
+      }
+      &.blue span{
+        background: $blue;
+      }
+      &.purple span{
+        background: $purple;
+        padding-top: 16px;
+        img{
+          height: 88%;
+        }
+      }
+      &.yellow span{
+        background: $yellow;
+        padding-top: 16px;
+        img{
+          height: 80%;
+        }
+      }
+      &.green span{
+        background: $green;
+        img{
+          height: 90%;
+        }
+      }
+    }
+  }
+}
+
+.fullwidth.orange{
+  background: $orange;
+  h3{
+    color: #fff;
+  }
+  ul{
+    li{
+      list-style: none;
+      height: 305px;
+      h4, p{
+        color: #fff;
+        font-family: "GothamLight";
+      }
+      h4{
+        text-transform: uppercase;
+        letter-spacing: -1.5px;
+        font-size: emCalc(17px);
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  }
+}

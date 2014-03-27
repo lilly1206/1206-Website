@@ -7327,6 +7327,12 @@ a.th {
   src: url("../fonts/gotham-book.eot") format("embedded-opentype"), url("../fonts/gotham-book.woff") format("woff"), url("../fonts/gotham-book.ttf") format("truetype"), url("../fonts/gotham-book.svg#GothamBook") format("svg");
 }
 
+@font-face {
+  font-family: 'GothamLight';
+  src: url("../fonts/gotham-light.eot");
+  src: url("../fonts/gotham-light.eot") format("embedded-opentype"), url("../fonts/gotham-light.woff") format("woff"), url("../fonts/gotham-light.ttf") format("truetype"), url("../fonts/gotham-light.svg#GothamLight") format("svg");
+}
+
 /* line 14, ../sass/_screen.scss */
 body {
   font-family: "GothamBook";
@@ -7449,4 +7455,122 @@ h3 {
 .header header .buttons a.hire {
   color: #e74c3c;
   background: #f1c40f;
+}
+
+/* line 117, ../sass/_screen.scss */
+.services h3 {
+  color: #2c3e50;
+}
+/* line 121, ../sass/_screen.scss */
+.services ul li {
+  text-align: center;
+  list-style: none;
+  height: 225px;
+}
+/* line 125, ../sass/_screen.scss */
+.services ul li h4 {
+  font-family: "GothamLight";
+  font-size: 1em;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin-top: 0.875em;
+  margin-bottom: 3px;
+}
+/* line 134, ../sass/_screen.scss */
+.services ul li p {
+  color: #7f8c8d;
+  font-family: "GothamLight";
+  font-size: 0.75em;
+  line-height: 1.125em;
+  letter-spacing: -0.5px;
+}
+/* line 141, ../sass/_screen.scss */
+.services ul li span {
+  height: 94px;
+  width: 94px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 11px;
+}
+/* line 149, ../sass/_screen.scss */
+.services ul li span img {
+  height: 75%;
+}
+/* line 153, ../sass/_screen.scss */
+.services ul li.gray span {
+  background: #7f8c8d;
+  padding-top: 20px;
+}
+/* line 157, ../sass/_screen.scss */
+.services ul li.orange span {
+  background: #e74c3c;
+  padding-top: 0;
+}
+/* line 160, ../sass/_screen.scss */
+.services ul li.orange span img {
+  height: 100%;
+}
+/* line 164, ../sass/_screen.scss */
+.services ul li.blue span {
+  background: #2c3e50;
+}
+/* line 167, ../sass/_screen.scss */
+.services ul li.purple span {
+  background: #9b59b6;
+  padding-top: 16px;
+}
+/* line 170, ../sass/_screen.scss */
+.services ul li.purple span img {
+  height: 88%;
+}
+/* line 174, ../sass/_screen.scss */
+.services ul li.yellow span {
+  background: #f1c40f;
+  padding-top: 16px;
+}
+/* line 177, ../sass/_screen.scss */
+.services ul li.yellow span img {
+  height: 80%;
+}
+/* line 181, ../sass/_screen.scss */
+.services ul li.green span {
+  background: #16a085;
+}
+/* line 183, ../sass/_screen.scss */
+.services ul li.green span img {
+  height: 90%;
+}
+
+/* line 191, ../sass/_screen.scss */
+.fullwidth.orange {
+  background: #e74c3c;
+}
+/* line 193, ../sass/_screen.scss */
+.fullwidth.orange h3 {
+  color: #fff;
+}
+/* line 197, ../sass/_screen.scss */
+.fullwidth.orange ul li {
+  list-style: none;
+  height: 305px;
+}
+/* line 200, ../sass/_screen.scss */
+.fullwidth.orange ul li h4, .fullwidth.orange ul li p {
+  color: #fff;
+  font-family: "GothamLight";
+}
+/* line 204, ../sass/_screen.scss */
+.fullwidth.orange ul li h4 {
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  font-size: 1.0625em;
+  text-align: center;
+  margin-top: 15px;
 }

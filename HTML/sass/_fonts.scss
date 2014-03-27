@@ -33,3 +33,12 @@
          url('../fonts/gotham-book.ttf') format('truetype'),
          url('../fonts/gotham-book.svg#GothamBook') format('svg');
 }
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fonts/gotham-light.eot');
+    src: url('../fonts/gotham-light.eot') format('embedded-opentype'),
+         url('../fonts/gotham-light.woff') format('woff'),
+         url('../fonts/gotham-light.ttf') format('truetype'),
+         url('../fonts/gotham-light.svg#GothamLight') format('svg');
+}
