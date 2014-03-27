@@ -1,7 +1,114 @@
+@import "fonts";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+
 $purple: #9b59b6;
 $blue: #2c3e50;
 $gray: #7f8c8d;
 $green: #16a085;
 $yellow: #f1c40f;
 $orange: #e74c3c;
-$border-radius: 3px;
+
+$base-font-size: 16px;
+
+body{
+  font-family: "GothamBook";
+}
+
+h3{
+  font-size: emCalc(30px);
+  font-family: "GothamMedium";
+  letter-spacing: -2px;
+}
+
+.fullwidth{
+  width: 100%;
+  max-width: none;
+  padding: emCalc(50px) 0;
+}
+
+.centered{
+  margin: 0 auto;
+  float: none;
+}
+
+#logo a{
+  display: block;
+  text-indent: -9999px;
+  background: url('../images/logo.png') no-repeat left top;
+  height: 110px;
+  width: 110px;
+  float: left;
+}
+
+.header{
+  background: url(../images/top-img.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 590px;
+  padding: 20px 0 0 0;
+  header{
+    nav{
+      padding-top: emCalc(10em);
+      a{
+        text-transform: uppercase;
+        font-family: "GothamBold";
+        font-size: emCalc(14px);
+        padding: emCalc(11px) emCalc(11px) emCalc(10px);
+        color: #fff;
+        display: block;
+        float: left;
+        letter-spacing: -0.5px;
+        line-height: 12px;
+        &:last-child{
+          background: $blue;
+          @include border-radius(3px);
+          margin-left: emCalc(7px);
+        }
+      }
+    }
+    .splash{
+      -webkit-font-smoothing: antialiased;
+      margin-top: 5em;
+      h2{
+        font-family: "GothamBold";
+        font-size: emCalc(48px);
+        color: #fff;
+        letter-spacing: -2px;
+        width: 85%;
+        line-height: emCalc(20px);
+        margin-bottom: 0;
+      }
+      h4{
+        font-family: "GothamBook";
+        font-size: emCalc(24px);
+        color: #fff;
+        letter-spacing: -2px;
+      }
+    }
+    .buttons{
+      margin: 3em auto;
+      a{
+        width: 46%;
+        margin: 0 2%;
+        display: block;
+        float: left;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "GothamBold";
+        font-size: emCalc(14px);
+        line-height: emCalc(45px);
+        @include border-radius(3px);
+        letter-spacing: -1px;
+        &.learn{
+          color: #fff;
+          background: $gray;
+        }
+        &.hire{
+          color: $orange;
+          background: $yellow;
+        }
+      }
+    }
+  }
+}
