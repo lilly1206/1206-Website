@@ -19,6 +19,39 @@ h3{
   font-size: emCalc(30px);
   font-family: "GothamMedium";
   letter-spacing: -2px;
+  margin: 0 0 emCalc(35px);
+}
+
+::-webkit-input-placeholder {
+   color: $gray;
+   font-size: 30px;
+   font-family: "GothamExtraLight";
+   opacity: 0.57;
+   letter-spacing: -1px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gray;
+   font-size: 30px;
+   font-family: "GothamExtraLight";
+   opacity: 0.57;
+   letter-spacing: -1px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray;
+   font-size: 30px;
+   font-family: "GothamExtraLight";
+   opacity: 0.57;
+   letter-spacing: -1px;
+}
+
+:-ms-input-placeholder {
+   color: $gray;
+   font-size: 30px;
+   font-family: "GothamExtraLight";
+   opacity: 0.57;
+   letter-spacing: -1px;
 }
 
 .fullwidth{
@@ -190,6 +223,7 @@ h3{
 
 .fullwidth.orange{
   background: $orange;
+  padding-bottom: 0;
   h3{
     color: #fff;
   }
@@ -197,6 +231,7 @@ h3{
     li{
       list-style: none;
       height: 305px;
+      margin-bottom: 20px;
       h4, p{
         color: #fff;
         font-family: "GothamLight";
@@ -207,6 +242,73 @@ h3{
         font-size: emCalc(17px);
         text-align: center;
         margin-top: 15px;
+        margin-bottom: 1px;
+      }
+      p{
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.testimonials{
+  div{
+    &:before{
+      content: "\201C";
+      font-size: emCalc(100px);
+      font-family: "GothamBold";
+      color: $blue;
+      float: left;
+    }
+  }
+  blockquote{
+    border: none;
+    font-family: "GothamLight";
+    font-size: 1.875em;
+    width: 94%;
+    float: left;
+    padding-top: 61px;
+    color: $blue;
+    letter-spacing: -1.5px;
+    cite{
+      float: right;
+      margin-top: 2em;
+      a{
+        color: $blue;
+        font-style: normal;
+        font-family: "GothamMedium";
+      }
+    }
+  }
+}
+
+.fullwidth.green{
+  background: $green;
+  .contact{
+    h3{
+      color: #fff;
+    }
+    form{
+      input[type="text"], input[type="email"], input[type="phone"]{
+        height: 60px;
+        line-height: 60px;
+        padding: 0 10px;
+      }
+      textarea{
+        height: 208px;
+        padding-top: 10px;
+      }
+      input[type="button"]{
+        float: right;
+        width: 60%;
+        background: $blue;
+        border: none;
+        line-height: 1.6em;
+        font-family: "GothamMedium";
+        font-size: emCalc(24px);
+        color: #fff;
+        @include border-radius(3px);
       }
     }
   }
