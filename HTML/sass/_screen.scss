@@ -299,7 +299,7 @@ h3{
         height: 208px;
         padding-top: 10px;
       }
-      input[type="button"]{
+      input[type="submit"]{
         float: right;
         width: 60%;
         background: $blue;
@@ -310,6 +310,9 @@ h3{
         color: #fff;
         @include border-radius(3px);
       }
+    }
+    #message{
+      display: none;
     }
   }
 }
